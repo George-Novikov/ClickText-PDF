@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "M3vgoo2649wrakACP792beWuz9neAKPIkBygHu5zdktWvxqMzns7INqa+jmS2YbcB/6CyM7B4m3p3meVkXGRQg==",
+  "success": true,
+  "projectFilePath": "C:\\repository\\ClickText PDF\\ClickText PDF.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\fatem\\.nuget\\packages\\pdfpig\\0.1.6\\pdfpig.0.1.6.nupkg.sha512"
+  ],
+  "logs": []
+}

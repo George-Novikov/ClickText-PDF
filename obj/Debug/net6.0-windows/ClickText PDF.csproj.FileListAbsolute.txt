@@ -1,0 +1,29 @@
+C:\repository\ClickText PDF\bin\Debug\net6.0-windows\ClickText PDF.exe
+C:\repository\ClickText PDF\bin\Debug\net6.0-windows\ClickText PDF.deps.json
+C:\repository\ClickText PDF\bin\Debug\net6.0-windows\ClickText PDF.runtimeconfig.json
+C:\repository\ClickText PDF\bin\Debug\net6.0-windows\ClickText PDF.dll
+C:\repository\ClickText PDF\bin\Debug\net6.0-windows\ClickText PDF.pdb
+C:\repository\ClickText PDF\bin\Debug\net6.0-windows\UglyToad.PdfPig.Core.dll
+C:\repository\ClickText PDF\bin\Debug\net6.0-windows\UglyToad.PdfPig.DocumentLayoutAnalysis.dll
+C:\repository\ClickText PDF\bin\Debug\net6.0-windows\UglyToad.PdfPig.Fonts.dll
+C:\repository\ClickText PDF\bin\Debug\net6.0-windows\UglyToad.PdfPig.Package.dll
+C:\repository\ClickText PDF\bin\Debug\net6.0-windows\UglyToad.PdfPig.Tokenization.dll
+C:\repository\ClickText PDF\bin\Debug\net6.0-windows\UglyToad.PdfPig.Tokens.dll
+C:\repository\ClickText PDF\bin\Debug\net6.0-windows\UglyToad.PdfPig.dll
+C:\repository\ClickText PDF\obj\Debug\net6.0-windows\ClickText PDF.csproj.AssemblyReference.cache
+C:\repository\ClickText PDF\obj\Debug\net6.0-windows\MainWindow.g.cs
+C:\repository\ClickText PDF\obj\Debug\net6.0-windows\App.g.cs
+C:\repository\ClickText PDF\obj\Debug\net6.0-windows\ClickText PDF_MarkupCompile.cache
+C:\repository\ClickText PDF\obj\Debug\net6.0-windows\ClickText PDF_MarkupCompile.lref
+C:\repository\ClickText PDF\obj\Debug\net6.0-windows\MainWindow.baml
+C:\repository\ClickText PDF\obj\Debug\net6.0-windows\ClickText PDF.g.resources
+C:\repository\ClickText PDF\obj\Debug\net6.0-windows\ClickText PDF.GeneratedMSBuildEditorConfig.editorconfig
+C:\repository\ClickText PDF\obj\Debug\net6.0-windows\ClickText PDF.AssemblyInfoInputs.cache
+C:\repository\ClickText PDF\obj\Debug\net6.0-windows\ClickText PDF.AssemblyInfo.cs
+C:\repository\ClickText PDF\obj\Debug\net6.0-windows\ClickText PDF.csproj.CoreCompileInputs.cache
+C:\repository\ClickText PDF\obj\Debug\net6.0-windows\ClickText PDF.csproj.CopyComplete
+C:\repository\ClickText PDF\obj\Debug\net6.0-windows\ClickText PDF.dll
+C:\repository\ClickText PDF\obj\Debug\net6.0-windows\refint\ClickText PDF.dll
+C:\repository\ClickText PDF\obj\Debug\net6.0-windows\ClickText PDF.pdb
+C:\repository\ClickText PDF\obj\Debug\net6.0-windows\ClickText PDF.genruntimeconfig.cache
+C:\repository\ClickText PDF\obj\Debug\net6.0-windows\ref\ClickText PDF.dll
