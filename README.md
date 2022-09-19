@@ -5,4 +5,4 @@ To open PDF documants this app utilizes a [PdfPig](https://github.com/UglyToad/P
 
 The text derived from PDF is displayed in the main window.
 Select the text you want to save and press "Copy" button or simply "C" key on your keyboard.
-Selected text will be saved to the file "buffer.txt" locatin at bin\Debug\net6.0-windows
+Selected text will be saved to the file "buffer.txt" locating at bin\Debug\net6.0-windows
