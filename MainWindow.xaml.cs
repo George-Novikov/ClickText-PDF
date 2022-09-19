@@ -70,29 +70,6 @@ namespace ClickText_PDF
                 {
                     MessageBox.Show(ex.Message);
                 }
-
-                /*try
-                {
-                    TextRange content = new TextRange(mainDocument.ContentStart, mainDocument.ContentEnd);
-                    int firstIndex = content.Text.IndexOf(rtb.Selection.Text);
-                    int lastIndex = firstIndex + rtb.Selection.Text.Length+1;
-
-                    TextPointer pointer = mainDocument.ContentStart;
-                    while (pointer.GetPointerContext(LogicalDirection.Forward) != TextPointerContext.Text)
-                    {
-                        pointer = pointer.GetNextContextPosition(LogicalDirection.Forward);
-                    }
-                    TextPointer startPos = pointer.GetPositionAtOffset(firstIndex);
-                    TextPointer endPos = pointer.GetPositionAtOffset(lastIndex);
-                    var textRange = new TextRange(startPos, endPos);
-                    textRange.ApplyPropertyValue(
-                        TextElement.BackgroundProperty,
-                        new SolidColorBrush(Colors.CornflowerBlue));
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show(ex.Message);
-                }*/
             }
         }
         private void Help_MouseDown()
