@@ -19,24 +19,55 @@
             <RowDefinition Height="35"/>
         </Grid.RowDefinitions>
         <GroupBox Margin="5" Background="White" Grid.Row="0">
-            <RichTextBox x:Name="rtb" VerticalScrollBarVisibility="Visible" BorderBrush="Gray">
+            <RichTextBox x:Name="rtb" VerticalScrollBarVisibility="Visible" BorderBrush="Gray" IsReadOnly="True">
                 <FlowDocument x:Name="mainDocument"/>
             </RichTextBox>
         </GroupBox>
         <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Top">
             <Button Content="Load PDF" MinWidth="120" Click="Load_Click"/>
-            <Button x:Name="copyButton" MinWidth="80" Click="Copy_Click">
+            <Button MinWidth="80" Click="Copy_Click">
                 <StackPanel Orientation="Horizontal">
                     <Ellipse Height="10" Width="10" Fill="PaleGoldenrod" Stroke="Gold"
                              VerticalAlignment="Center"/>
                     <TextBlock Text="Copy" VerticalAlignment="Center" Margin="3"/>
                 </StackPanel>
             </Button>
-            <Grid Margin="5">
-                <Ellipse Height="25" Width="25" Fill="CornflowerBlue" Stroke="White"/>
+            <Button MinWidth="80" Click="Addition_Click">
+                <StackPanel Orientation="Horizontal">
+                    <Ellipse Height="10" Width="10" Fill="LightPink" Stroke="IndianRed"
+                             VerticalAlignment="Center"/>
+                    <TextBlock Text="Addition" VerticalAlignment="Center" Margin="3"/>
+                </StackPanel>
+            </Button>
+            <Grid Margin="5" MouseEnter="Help_MouseEnter" MouseLeave="Help_MouseLeave" MouseDown="Help_MouseDown">
+                <Ellipse x:Name="helpBackGround" Height="25" Width="25"
+                         Fill="Gray" Stroke="White"/>
                 <TextBlock Text="?" Foreground="White" FontWeight="Black"
                            HorizontalAlignment="Center" VerticalAlignment="Center"/>
             </Grid>
         </StackPanel>
+        <GroupBox x:Name="helpGroupBox" Height="240" Width="310" Visibility="Hidden"
+                  VerticalAlignment="Center" HorizontalAlignment="Center"
+                  Background="White" BorderBrush="LightGray" BorderThickness="1">
+            <Grid>
+                <TextBlock Margin="2" VerticalAlignment="Center" TextWrapping="Wrap">
+                This app is primarily purposed to make dictionaries and notes from PDF sources and writing them into *.txt files.
+                <LineBreak/>
+                <LineBreak/>
+                Highlight a word you need to copy using mouse cursor, like you select a word in texts regularly.
+                Press C or Copy button and this word will be added into a "buffer.txt" file.
+                <LineBreak/>
+                <LineBreak/>
+                If you need an additional note that accompanies the first, select it and press D or Addition button.
+                It will appear in the file "addition.txt".
+                </TextBlock>
+                <Button VerticalAlignment="Top" HorizontalAlignment="Right"
+                        Background="LightGray" Foreground="Gray"
+                        MinHeight="17" MinWidth="17" Margin="0" Click="Help_XClick" BorderBrush="LightGray">
+                    <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center"
+                               Text="x" FontWeight="Bold" TextAlignment="Justify"/>
+                </Button>
+            </Grid>
+        </GroupBox>
     </Grid>
 </Window>

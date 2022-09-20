@@ -44,24 +44,34 @@ namespace ClickText_PDF
         {
             CopySelection1();
         }
+        private void Addition_Click(object sender, RoutedEventArgs e)
+        {
+            CopySelection2();
+        }
         private void CKey_KeyDown(object sender, KeyEventArgs e)
         {
-            CopySelection1();
+            if (e.Key == Key.C)
+            {
+                CopySelection1();
+            }
+            if (e.Key == Key.D)
+            {
+                CopySelection2();
+            }
         }
         private void CopySelection1()
         {
             if (mainDocument.Blocks != null && rtb.Selection.Text != null)
             {
-                using (StreamWriter writer = new StreamWriter("buffer.txt", true))
+                using (StreamWriter writer = new StreamWriter("copied.txt", true))
                 {
                     writer.WriteLine(rtb.Selection.Text);
                 }
-
                 try
                 {
-                    TextPointer endPosition = rtb.CaretPosition;
-                    TextPointer startPosition = endPosition.GetPositionAtOffset(-rtb.Selection.Text.Length);
-                    var textRange = new TextRange(startPosition, endPosition);
+                    TextPointer startPos = rtb.Selection.Start;
+                    TextPointer endPos = rtb.Selection.End;
+                    var textRange = new TextRange(startPos, endPos);
                     textRange.ApplyPropertyValue(
                         TextElement.BackgroundProperty,
                         new SolidColorBrush(Colors.PaleGoldenrod));
@@ -72,13 +82,55 @@ namespace ClickText_PDF
                 }
             }
         }
-        private void Help_MouseDown()
+        private void CopySelection2()
         {
-            //TO DO: make a help window
+            if (mainDocument.Blocks != null && rtb.Selection.Text != null)
+            {
+                using (StreamWriter writer = new StreamWriter("addition.txt", true))
+                {
+                    writer.WriteLine(rtb.Selection.Text);
+                }
+                try
+                {
+                    TextPointer startPos = rtb.Selection.Start;
+                    TextPointer endPos = rtb.Selection.End;
+                    var textRange = new TextRange(startPos, endPos);
+                    textRange.ApplyPropertyValue(
+                        TextElement.BackgroundProperty,
+                        new SolidColorBrush(Colors.LightPink));
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
         }
-        private void Help_MouseOver()
+        private void Help_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            //TO DO: make an event to change color of help button ellipse
+            helpGroubBox_Visibility();
+        }
+        private void Help_XClick(object sender, RoutedEventArgs e)
+        {
+            helpGroubBox_Visibility();
+        }
+        private void helpGroubBox_Visibility()
+        {
+            if (helpGroupBox.Visibility == Visibility.Hidden)
+            {
+                helpGroupBox.Visibility = Visibility.Visible;
+            }
+            else
+            {
+                helpGroupBox.Visibility = Visibility.Hidden;
+            }
+        }
+        private void Help_MouseEnter(object sender, MouseEventArgs e)
+        {
+            helpBackGround.Fill=new SolidColorBrush(Colors.CornflowerBlue);
+        }
+        private void Help_MouseLeave(object sender, MouseEventArgs e)
+        {
+            helpBackGround.Fill = new SolidColorBrush(Colors.Gray);
         }
         private void LoadPdf(string path)
         {
