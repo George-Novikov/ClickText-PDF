@@ -27,3 +27,5 @@ C:\repository\ClickText PDF\obj\Debug\net6.0-windows\refint\ClickText PDF.dll
 C:\repository\ClickText PDF\obj\Debug\net6.0-windows\ClickText PDF.pdb
 C:\repository\ClickText PDF\obj\Debug\net6.0-windows\ClickText PDF.genruntimeconfig.cache
 C:\repository\ClickText PDF\obj\Debug\net6.0-windows\ref\ClickText PDF.dll
+C:\repository\ClickText PDF\obj\Debug\net6.0-windows\ClickText PDF_Content.g.cs
+C:\repository\ClickText PDF\bin\Debug\net6.0-windows\icon.ico

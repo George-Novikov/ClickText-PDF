@@ -5,6 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ClickText_PDF"
         mc:Ignorable="d"
+        Icon="icon.ico"
         Title="MainWindow" Height="540" Width="960"
         Background="LightGray" KeyDown="CKey_KeyDown">
     <Window.Resources>
