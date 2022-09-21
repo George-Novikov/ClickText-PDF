@@ -5,7 +5,8 @@ To open PDF documents this app utilizes a [PdfPig](https://github.com/UglyToad/P
 
 The text derived from PDF is displayed in the main window.
 Highlight the text you want to save and press "Copy" button or simply "C" key on your keyboard.
-Selected text will be saved to the file "copied.txt" locating at bin\Debug\net6.0-windows
+This fragment will be saved to the file "copied.txt" locating at bin\Debug\net6.0-windows
+Also, the highlighted text will be marked with the color of the corresponding button.
 
 If you need to save an accompanying word, then highlight it and press "Addition" button or "D" key.
 It will be be saved to the file "addition.txt" locating ibid.

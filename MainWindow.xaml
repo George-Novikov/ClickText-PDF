@@ -56,7 +56,7 @@
                 <LineBreak/>
                 <LineBreak/>
                 Highlight a word you need to copy using mouse cursor, like you select a word in texts regularly.
-                Press C or Copy button and this word will be added into a "buffer.txt" file.
+                Press C or Copy button and this word will be added into a "copied.txt" file.
                 <LineBreak/>
                 <LineBreak/>
                 If you need an additional note that accompanies the first, select it and press D or Addition button.
